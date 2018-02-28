@@ -1,0 +1,38 @@
+{
+  "name": "electron-watch",
+  "version": "0.1.0",
+  "private": true,
+  "main": "public/electron.js",
+  "homepage": "./",
+  "dependencies": {
+    "moment": "^2.20.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.1.1"
+  },
+  "description": "A little Watch",
+  "build": {
+    "appId": "electron.watch",
+    "productName": "E-Watch",
+    "linux": {
+      "category": "Utils",
+      "packageCategory": "utils",
+      "maintainer": "Marcel Engler",
+      "target": ["deb"],
+      "synopsis": "Watch"
+    }
+  },
+  "author": "Marcel Engler",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "electron-dev": "ELECTRON_START_URL=http://localhost:3000 electron .",
+    "electron": "electron ."
+  },
+  "devDependencies": {
+    "electron-builder": "^20.2.0",
+    "electron": "^1.8.2"
+  }
+}
